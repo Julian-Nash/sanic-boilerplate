@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="{{ app.url_for('static', filename='css/style.css') }}">
+  {% block head %}{% endblock %}
+  <title>{% block title %}Sanic boilerplate{% endblock %}</title>
+</head>
+<body>
+  <main>{% block main %}{% endblock %}</main>
+  {% block scripts %}{% endblock %}
+</body>
+</html>

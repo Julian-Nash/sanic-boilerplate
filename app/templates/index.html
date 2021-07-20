@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block main %}
+<h1>Home</h1>
+<p id="wsTime"></p>
+{% endblock %}
+
+{% block scripts %}
+<script>
+
+  const ws = new WebSocket("ws://localhost:8000/ws/feed");
+  const wsTimeElem = document.getElementById("wsTime");
+
+  ws.onopen = () => {
+    ws.send("Here's some client data");
+  }
+
+  ws.onmessage = (e) => {
+    wsTimeElem.innerText = `Current time in ISO format: ${e.data}`;
+  }
+
+</script>
+{% endblock %}
