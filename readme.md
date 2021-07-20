@@ -8,6 +8,8 @@ Starting the app:
 python run.py
 ```
 
+The application will start on http://localhost:8000
+
 Options for starting the app:
 
 ```shell
@@ -30,5 +32,10 @@ optional arguments:
 
 ```
 
-- Sanic docs - [Sanic](https://sanicframework.org/)
-- Jinja2 docs - [Jinja2](https://jinja.palletsprojects.com/en/3.0.x/)
+__Sanic:__
+- [Sanic Docs](https://sanicframework.org/)
+- [Sanic GitHub](https://github.com/sanic-org/sanic)
+  
+__Jinja2:__
+- [Jinja2 Docs](https://jinja.palletsprojects.com/en/3.0.x/)
+- [Jinja2 GitHub](https://github.com/pallets/jinja)
