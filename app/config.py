@@ -15,7 +15,7 @@ class BaseConfig(Config):
     """ Shared config class """
 
 
-class ProdConfig(Config):
+class ProdConfig(BaseConfig):
     """ Production config """
 
 
