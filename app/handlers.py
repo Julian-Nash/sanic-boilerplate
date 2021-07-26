@@ -13,5 +13,5 @@ class BaseHTTPView(HTTPMethodView):
     def render_template(self, template: str, request: Request, **kwargs) -> html:
         """ Render an HTML template """
         template = env.get_template(template)
-        rendered = template.render(request=request, app=request.app, **kwargs)
+        rendered = template.render(request=request, app=request.app, url_for=request.app.url_for, **kwargs)
         return html(rendered)
