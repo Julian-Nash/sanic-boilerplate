@@ -2,6 +2,12 @@
 
 Sanic web application boilerplate with Jinja2 template rendering.
 
+Installation:
+
+```shell
+pip install -e .
+```
+
 Starting the app:
 
 ```shell
