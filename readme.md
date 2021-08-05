@@ -29,13 +29,12 @@ optional arguments:
   --port PORT           Application port (default: 8000)
   --debug DEBUG         Enable debug mode (default: False)
   --access-log ACCESS_LOG
-                        Enable debug mode (default: False)
+                        Enable access log (default: False)
   --auto-reload AUTO_RELOAD
                         Enable auto reload (default: False)
   --workers WORKERS     N. workers (default: 12)
   --config {prod,dev,test}
                         Configuration name (default: prod)
-
 ```
 
 __Sanic:__
